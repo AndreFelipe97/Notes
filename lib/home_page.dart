@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBarWidget(
         titleText: 'NOTES',
+        actions: [IconButton(onPressed: _addNavigation, icon: Icon(Icons.add))],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -50,10 +51,11 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: _addNavigation,
-      ),
+      // Botão floating
+      // floatingActionButton: FloatingActionButton(
+      //   child: Icon(Icons.add),
+      //   onPressed: _addNavigation,
+      // ),
     );
   }
 }
